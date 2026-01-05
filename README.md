@@ -7,3 +7,4 @@ we can even show the contribution graph there using the required api
 Keep it a single page 
 add smooth navigation to specific blocks
 added apis to call projects from my github
+added dynamic elements creations
