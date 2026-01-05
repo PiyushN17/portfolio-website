@@ -8,3 +8,4 @@ Keep it a single page
 add smooth navigation to specific blocks
 added apis to call projects from my github
 added dynamic elements creations
+need to add error handling using try and catch
