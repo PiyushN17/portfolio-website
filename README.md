@@ -6,3 +6,4 @@ create a project section and then pull data from the api of github from your acc
 we can even show the contribution graph there using the required api
 Keep it a single page 
 add smooth navigation to specific blocks
+added apis to call projects from my github
