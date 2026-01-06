@@ -14,3 +14,4 @@ will try to make it more responsive
 will make light/dark mode
 will create good favicon
 need to host on vercel
+add more apis
