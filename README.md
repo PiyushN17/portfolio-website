@@ -11,3 +11,4 @@ added dynamic elements creations
 need to add error handling using try and catch
 also added cool css to the dynamically created elements enhancing ux
 will try to make it more responsive
+will make light/dark mode
