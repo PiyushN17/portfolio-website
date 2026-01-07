@@ -18,3 +18,4 @@ add more apis
 add header and footer
 need to make it error free
 Will make tis totally upto my standards
+Will add necessary features to showcase my JS Skills
