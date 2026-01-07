@@ -16,3 +16,4 @@ will create good favicon
 need to host on vercel
 add more apis
 add header and footer
+need to make it error free
