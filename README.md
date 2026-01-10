@@ -23,3 +23,4 @@ need to add resume
 add relevant data
 added a dropdown
 added a good nav bar and footer
+To keep the data
