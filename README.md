@@ -25,3 +25,4 @@ added a dropdown
 added a good nav bar and footer
 To keep the data
 Need to add proper css to cards
+to create proper scrolling
