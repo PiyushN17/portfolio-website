@@ -27,3 +27,4 @@ To keep the data
 Need to add proper css to cards
 to create proper scrolling
 Need to add box shadow
+working on dark and light mode
