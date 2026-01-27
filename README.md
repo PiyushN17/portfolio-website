@@ -29,3 +29,4 @@ to create proper scrolling
 Need to add box shadow
 working on dark and light mode
 To Optimise the API output in cards
+Need to add smooth animations
