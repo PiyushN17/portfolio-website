@@ -32,3 +32,4 @@ To Optimise the API output in cards
 Need to add smooth animations
 more api needs to be attached for fetching more data
 To add border around the contribution graph
+Updated the footer with relevant social media links
