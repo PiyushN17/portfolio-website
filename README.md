@@ -34,3 +34,4 @@ more api needs to be attached for fetching more data
 To add border around the contribution graph
 Updated the footer with relevant social media links
 Need to bypass api rate limit
+Need to update the api urls
