@@ -37,3 +37,4 @@ Need to bypass api rate limit
 Need to update the api urls
 Need to create customs photos
 remove bugs
+to create one ai based portfolio as well
