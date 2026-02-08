@@ -3,45 +3,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush Nath - Portfolio</title>
+    <title>Piyush Nath — Backend Developer</title>
+    <meta name="description" content="Backend developer learning Node.js, Python, and system design at HyperVerge Academy. Building scalable solutions.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://www.shareicon.net/download/2016/11/14/851975_p-pinterest.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
-        <nav>
-            <a href="#" class="main">Piyush Nath</a>
-            <div id="rightHead">
-                <a href="#" class="home">Home</a>
-                <a href="#" class="about">About</a>
-                <a href="#" class="skill">Skills</a>
-                <a href="#"class="qual">Qualifications</a>
-                <a href="#" class="project">Projects</a>
-                <a href="#" class="contact">Contact Me</a>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <div class="logo-symbol">PN</div>
+                    <span class="logo-text">Piyush Nath</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <a href="#contact" class="btn-nav">
+                    <span>Let's Connect</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        <span>Backend Learner · HyperVerge Academy</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Building backend systems that
+                        <span class="gradient-text">scale and solve real problems</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        I'm Piyush, an aspiring backend developer from Patna, India. Currently deep-diving into JavaScript, Node.js, and Python to design efficient server-side logic, databases, and APIs that don't just run—they adapt and grow.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">195+</div>
+                            <div class="stat-label">Day Streak</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">650+</div>
+                            <div class="stat-label">Tasks Done</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">#1</div>
+                            <div class="stat-label">HVA Rank</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">
+                            <span>View My Work</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L12 9M8 13L4 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/connectwithpiyush" target="_blank" rel="noopener" class="btn-secondary">
+                            <span>LinkedIn</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/PiyushN17" target="_blank" rel="noopener" class="btn-secondary">
+                            <span>GitHub</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-meta">
+                        <span class="meta-item">
+                            <span class="meta-dot"></span>
+                            Open to backend & full-stack opportunities
+                        </span>
+                        <span class="meta-item">Patna, Bihar · Remote Friendly</span>
+                    </div>
+                </div>
+                
+                <aside class="hero-sidebar">
+                    <!-- GitHub Contributions -->
+                    <div class="card card-contributions">
+                        <div class="card-header">
+                            <h3>GitHub Activity</h3>
+                            <span class="badge">2025</span>
+                        </div>
+                        <div id="contribution-graph" class="contribution-grid"></div>
+                        <p class="card-footer">
+                            Maintaining Top 1 rank on HyperVerge Academy with consistent daily progress
+                        </p>
+                    </div>
+                    
+                    <!-- Tech Stack -->
+                    <div class="card card-tech">
+                        <div class="card-header">
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <div class="tech-grid">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Database Design</span>
+                            <span class="tech-tag">System Design</span>
+                        </div>
+                    </div>
+                </aside>
             </div>
-        </nav>
-    </div>
+        </div>
+    </section>
 
-    <div id="frontPage">
+    <!-- Experience Section -->
+    <section class="section section-experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Leadership</h2>
+                <p class="section-subtitle">Building skills through hands-on projects, community leadership, and continuous learning</p>
+            </div>
+            
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">💻</div>
+                        <div class="exp-meta">
+                            <h3 class="exp-title">Backend Learner</h3>
+                            <p class="exp-company">HyperVerge Academy</p>
+                            <time class="exp-date">June 2025 — Present · Bengaluru (Remote)</time>
+                        </div>
+                    </div>
+                    <p class="exp-description">
+                        Deep-diving into backend development fundamentals with JavaScript, Python, and Node.js. Focusing on server-side logic, API design, databases, and scalable system architecture.
+                    </p>
+                    <ul class="exp-highlights">
+                        <li>Achieved and maintained #1 rank on the leaderboard from October to present</li>
+                        <li>Completed 650+ tasks with a 195+ day learning streak</li>
+                        <li>Consistently in Top 5 for 65+ days, Top 10 for 30+ days</li>
+                        <li>Selected after rigorous 14-day screening and dual interview rounds among 500+ candidates</li>
+                    </ul>
+                </article>
+                
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">🚀</div>
+                        <div class="exp-meta">
+                            <h3 class="exp-title">Programmer Analyst Trainee</h3>
+                            <p class="exp-company">Center for Entrepreneurship Development Patna</p>
+                            <time class="exp-date">December 2023 — June 2024 · Patna</time>
+                        </div>
+                    </div>
+                    <p class="exp-description">
+                        Developed full-stack solutions and led digital transformation initiatives for local businesses and educational institutions.
+                    </p>
+                    <ul class="exp-highlights">
+                        <li>Built WordPress websites with custom plugins for map integration and CTAs, helping a clothing shop expand online</li>
+                        <li>Designed and developed UI for College Website and Library Management System with peers</li>
+                        <li>Led digital transformation from traditional register-based to fully digital data management</li>
+                        <li>Organized major campus events: Bihar Diwas, E-Sports Tournaments, Voting Campaigns</li>
+                        <li>Selected from 100 students after technical and personal interviews</li>
+                    </ul>
+                </article>
+                
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">🎨</div>
+                        <div class="exp-meta">
+                            <h3 class="exp-title">Design & Marketing Head</h3>
+                            <p class="exp-company">Google Developer Student Club (GDSC)</p>
+                            <time class="exp-date">July 2023 — July 2024 · IIBM Patna</time>
+                        </div>
+                    </div>
+                    <p class="exp-description">
+                        Led creative direction and marketing execution for GDSC events, building a strong tech community on campus.
+                    </p>
+                    <ul class="exp-highlights">
+                        <li>Created 30+ visually compelling graphics, posters, and promotional materials</li>
+                        <li>Mentored 10 junior designers, helping them confidently start their design journey</li>
+                        <li>Managed event promotions, volunteers, and audience engagement strategies</li>
+                        <li>Selected from 50 candidates after design portfolio review and telephonic interview</li>
+                    </ul>
+                </article>
+                
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">☁️</div>
+                        <div class="exp-meta">
+                            <h3 class="exp-title">Google Cloud Facilitator</h3>
+                            <p class="exp-company">Google Developer Student Club (GDSC)</p>
+                            <time class="exp-date">September 2023 — December 2023 · IIBM Patna</time>
+                        </div>
+                    </div>
+                    <p class="exp-description">
+                        Guided students through Google Cloud technologies and generative AI concepts, fostering hands-on cloud computing skills.
+                    </p>
+                    <ul class="exp-highlights">
+                        <li>Hosted 3-day workshop on Google Cloud and Gen AI with 100+ participants</li>
+                        <li>Supported students through cloud labs covering storage, networking, and deployment</li>
+                        <li>Improved presentation and communication skills while expanding professional network</li>
+                        <li>Selected based on GDSC Lead and College Director recommendation</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <br>
-    <br>
-    <br>
-    <p>GitHub Projects</p>
-    <div id="gitProjects"></div>
-    <p>Last Year GitHub Contribution Graph</p>
-    <div id="contribution-graph"></div>
+    <!-- Projects Section -->
+    <section class="section section-projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world applications showcasing API integration, clean code, and user-focused design</p>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card project-featured">
+                    <div class="project-header">
+                        <div class="project-badges">
+                            <span class="badge badge-winner">🏆 Hackathon Winner</span>
+                            <span class="badge">Dec 2025</span>
+                        </div>
+                        <a href="https://github.com/PiyushN17/eduscript" target="_blank" rel="noopener" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">EduScript — Making Exam Preparation Simple</h3>
+                    <p class="project-description">
+                        Winner of IIBM Campus Hackathon 2025. An exam-oriented learning platform designed to help university students write better answers and score higher through PYQ analysis, topper-inspired answer structuring, and real exam simulation.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Designed and managed 2000+ lines of structured JSON for question-answer API responses</li>
+                        <li>Implemented Study, Revision, and Exam modes for comprehensive learning</li>
+                        <li>Built real exam simulation environment to practice answer writing</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-pill">JSON API</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Educational Tech</span>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badges">
+                            <span class="badge">Nov 2025</span>
+                        </div>
+                        <a href="https://github.com/PiyushN17/movie-lookup" target="_blank" rel="noopener" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Movie Lookup</h3>
+                    <p class="project-description">
+                        Search application for movies and TV shows using the OMDb API with fetch(), displaying comprehensive details including posters, release years, and ratings.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">OMDb API</span>
+                        <span class="tech-pill">Fetch API</span>
+                        <span class="tech-pill">JavaScript</span>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badges">
+                            <span class="badge">Dec 2025</span>
+                        </div>
+                        <a href="https://github.com/PiyushN17/news-search" target="_blank" rel="noopener" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Top Stories — Latest News</h3>
+                    <p class="project-description">
+                        Client-side news aggregator fetching real-time headlines using NewsData.io API with category browsing, keyword search, and pagination support.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-pill">NewsData.io API</span>
+                        <span class="tech-pill">Pagination</span>
+                        <span class="tech-pill">Search</span>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="github-repos">
+                <div class="section-subheader">
+                    <h3>More Projects from GitHub</h3>
+                    <p>Live stats from my public repositories</p>
+                </div>
+                <div id="gitProjects" class="repos-grid"></div>
+            </div>
+        </div>
+    </section>
 
-    <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <div class="section-header">
+                        <h2 class="section-title">Let's Build Something Together</h2>
+                        <p class="section-subtitle">
+                            Whether it's a backend internship, a collaborative project, or just exchanging ideas about tech — I'd love to hear from you.
+                        </p>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="from_name" 
+                                class="form-input" 
+                                placeholder="John Doe"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="reply_to" 
+                                class="form-input" 
+                                placeholder="john@example.com"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="5"
+                                placeholder="Tell me about your project or idea..."
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M14 2L7 9M14 2L9.5 14L7 9M14 2L2 6.5L7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <aside class="contact-info">
+                    <div class="info-card">
+                        <h4 class="info-title">Get in Touch</h4>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:piyush.nath1710@gmail.com" class="info-link">piyush.nath1710@gmail.com</a>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label">Phone</span>
+                                <a href="tel:+919123121994" class="info-link">+91 9123121994</a>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label">Location</span>
+                                <span class="info-text">Patna, Bihar, India</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4 class="info-title">Connect Online</h4>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <span class="info-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/connectwithpiyush" target="_blank" rel="noopener" class="info-link">
+                                    connectwithpiyush
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                        <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="info-item">
+                                <span class="info-label">GitHub</span>
+                                <a href="https://github.com/PiyushN17" target="_blank" rel="noopener" class="info-link">
+                                    PiyushN17
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                        <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card info-card-highlight">
+                        <div class="highlight-content">
+                            <div class="highlight-icon">🎯</div>
+                            <p class="highlight-text">
+                                Open to backend development internships and collaborative projects. Let's create something impactful together!
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2026 Piyush Nath. Built with passion for clean code and scalable systems.</p>
+                <div class="footer-links">
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
