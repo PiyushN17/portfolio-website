@@ -1,4 +1,3 @@
-/* ─── DARK THEME (default for [data-theme="dark"]) ─── */
 [data-theme="dark"] {
   --bg:       #0b0f1a;
   --bg2:      #0f1521;
@@ -16,7 +15,6 @@
   --input-bg: #0f1521;
 }
 
-/* ─── LIGHT THEME ─── */
 [data-theme="light"] {
   --bg:       #f4f6fb;
   --bg2:      #ffffff;
@@ -65,7 +63,6 @@ ul { list-style: none; }
 
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
 
-/* ─── NAV ─── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: var(--nav-bg);
@@ -133,7 +130,6 @@ nav {
 .nav-cta::after { display:none !important; }
 .nav-cta:hover { background: var(--cyan) !important; color: var(--bg) !important; }
 
-/* ─── THEME TOGGLE ─── */
 .theme-toggle {
   width: 38px; height: 38px;
   border: 1px solid var(--border2);
@@ -157,17 +153,14 @@ nav {
   transition: opacity 0.25s ease, transform 0.3s var(--ease);
 }
 
-/* Light mode: show sun (hidden), show moon */
 [data-theme="light"] .theme-icon.sun  { opacity: 0; transform: translateY(-6px) rotate(20deg); }
 [data-theme="light"] .theme-icon.moon { opacity: 1; transform: translateY(0) rotate(0deg); }
 
-/* Dark mode: show sun, hide moon */
 [data-theme="dark"]  .theme-icon.sun  { opacity: 1; transform: translateY(0) rotate(0deg); }
 [data-theme="dark"]  .theme-icon.moon { opacity: 0; transform: translateY(6px) rotate(-20deg); }
 
 @media (max-width: 640px) { .nav-links { display: none; } }
 
-/* ─── HERO ─── */
 .hero {
   min-height: 100vh;
   display: flex; align-items: center;
@@ -293,7 +286,6 @@ nav {
   from { opacity: 0; transform: translateY(26px); }
 }
 
-/* ─── SECTIONS ─── */
 .section { padding: 96px 0; border-top: 1px solid var(--border); }
 
 .sec-eyebrow {
@@ -318,7 +310,6 @@ nav {
   max-width: 500px; line-height: 1.75; margin-bottom: 3rem;
 }
 
-/* ─── ABOUT ─── */
 .about-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start;
 }
@@ -346,7 +337,6 @@ nav {
 }
 .tag:hover { border-color: var(--cyan); color: var(--cyan); }
 
-/* ─── EXPERIENCE ─── */
 .exp-list { display: flex; flex-direction: column; }
 
 .exp-row {
@@ -378,7 +368,6 @@ nav {
   color: var(--cyan);
 }
 
-/* ─── PROJECTS ─── */
 .projects-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 1.25rem;
 }
@@ -423,7 +412,6 @@ nav {
   background: var(--bg3); border: 1px solid var(--border);
 }
 
-/* ─── LIVE PREVIEW BUTTON ─── */
 .proj-actions { margin-top: auto; }
 
 .proj-live-btn {
@@ -441,7 +429,6 @@ nav {
   transform: translateY(-1px);
 }
 
-/* ─── CERTIFICATIONS ─── */
 .cert-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1px; background: var(--border);
@@ -467,7 +454,6 @@ nav {
   padding-top: .1rem;
 }
 
-/* ─── CONTACT ─── */
 .contact-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
 }
@@ -492,7 +478,6 @@ nav {
 .clink-lbl { font-family: var(--mono); font-size: .67rem; color: var(--text3); display: block; margin-bottom: .1rem; }
 .clink-val { font-size: .85rem; font-weight: 500; }
 
-/* ─── FORM ─── */
 .form { display: flex; flex-direction: column; gap: 1.2rem; }
 
 .frow { display: flex; flex-direction: column; gap: .38rem; }
