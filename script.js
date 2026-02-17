@@ -2,13 +2,11 @@
   if (typeof emailjs !== 'undefined') emailjs.init('YxgJ-vqlDwKCrBFbE');
 })();
 
-/* ─── THEME TOGGLE ─── */
 (function() {
   const root    = document.documentElement;
   const btn     = document.getElementById('theme-toggle');
   const STORAGE = 'pn-theme';
 
-  // Light is the default; only override if stored preference exists
   const saved = localStorage.getItem(STORAGE);
   const theme = saved || 'light';
   root.setAttribute('data-theme', theme);
@@ -26,7 +24,6 @@
   }
 })();
 
-/* ─── CONTACT FORM ─── */
 function toast(msg, type) {
   const el = document.getElementById('toast');
   document.getElementById('toast-icon').textContent = type === 'ok' ? '✓' : '✕';
@@ -53,7 +50,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     .finally(() => { btn.disabled = false; btn.innerHTML = orig; });
 });
 
-/* ─── SMOOTH SCROLL ─── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', function(e) {
     const t = document.querySelector(this.getAttribute('href'));
@@ -62,13 +58,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-/* ─── SCROLL REVEAL ─── */
 const io = new IntersectionObserver((entries) => {
   entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-/* ─── ACTIVE NAV HIGHLIGHT ─── */
 const navAs = document.querySelectorAll('.nav-links a[href^="#"]');
 const secs  = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
@@ -82,7 +76,6 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-/* ─── NAV SHADOW ON SCROLL ─── */
 const navEl = document.querySelector('nav');
 window.addEventListener('scroll', () => {
   navEl.style.boxShadow = scrollY > 10 ? '0 1px 28px var(--shadow)' : 'none';
